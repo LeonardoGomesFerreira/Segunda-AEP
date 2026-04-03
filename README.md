@@ -1,113 +1,100 @@
-# 📌 Sistema de Solicitações (POO - Java CLI)
+# 📌 Sistema de Solicitações (Java - POO)
 
-Projeto desenvolvido para a disciplina de Programação Orientada a Objetos (POO) com integração de conceitos de IHC (Perfis/Personas) e Clean Code.
-
----
-
-# 🎯 Objetivo
-
-Criar um sistema simples que permita:
-
-* Cidadãos registrarem solicitações
-* Servidores acompanharem e gerenciarem demandas
-* Organização e rastreamento por protocolo
+Este projeto é um sistema simples em Java desenvolvido com foco em Programação Orientada a Objetos (POO), executado via terminal (CLI).
 
 ---
 
 # 🧩 Funcionalidades
 
-✔ Criar solicitação
-✔ Listar solicitações
-✔ Buscar por protocolo
-✔ Atualizar status
-✔ Registrar histórico com comentários
+* Criar solicitação
+* Listar solicitações
+* Buscar por protocolo
+* Atualizar status
+* Registrar comentários no histórico
 
 ---
 
-# 🏗️ Estrutura do Projeto
+# 🏗️ Estrutura do Código
+
+O projeto está organizado em camadas:
 
 src/
-├── model/
+├── model/ → classes de domínio
 │    ├── Usuario.java
 │    ├── Categoria.java
 │    ├── HistoricoStatus.java
 │    └── Solicitacao.java
 │
-├── service/
+├── service/ → regras de negócio
 │    └── ServicoSolicitacao.java
 │
-└── Main.java
+└── Main.java → execução do sistema
 
 ---
 
-# 🧠 Conceitos de POO Utilizados
+# 🧠 Organização das Classes
+
+## 📁 model
+
+* **Usuario** → representa o usuário do sistema
+* **Categoria** → tipo da solicitação
+* **HistoricoStatus** → registra mudanças de status
+* **Solicitacao** → entidade principal do sistema
+
+---
+
+## ⚙️ service
+
+* **ServicoSolicitacao**
+
+  * Cria solicitações
+  * Lista solicitações
+  * Busca por protocolo
+  * Atualiza status
+
+---
+
+## 🖥️ Main
+
+Responsável pela interação com o usuário via terminal.
+
+Contém:
+
+* Menu do sistema
+* Entrada de dados
+* Chamadas para o serviço
+
+---
+
+# 🔄 Fluxo do Sistema
+
+1. Usuário cria uma solicitação
+2. Sistema gera automaticamente um protocolo
+3. Status inicial é "ABERTA"
+4. Solicitação pode ser atualizada
+5. Histórico é registrado a cada alteração
+
+---
+
+# 🧪 Exemplo de Uso
+
+Criando uma solicitação:
+
+Descrição: Buraco na rua
+Categoria: Infraestrutura
+
+Resultado:
+
+Criado com protocolo: 1
+
+---
+
+# 🧠 Conceitos de POO Aplicados
 
 * Encapsulamento (atributos privados + getters)
 * Separação de responsabilidades
-* Organização em camadas (Model / Service)
-* Reutilização de código
-
----
-
-# 👥 IHC — Perfis e Personas
-
-## 🔹 Perfil 1: Baixa familiaridade digital
-
-Maria (58 anos)
-
-* Dificuldade com tecnologia
-* Precisa de interface simples
-* Medo de errar e perder solicitação
-
-José (65 anos)
-
-* Não usa computador
-* Quer resolver problemas rapidamente
-* Medo de não conseguir concluir
-
-Ana (50 anos)
-
-* Usa redes sociais básicas
-* Dificuldade com formulários
-* Medo de não ser atendida
-
----
-
-## 🔹 Perfil 2: Vulnerabilidade / medo
-
-Carlos (30 anos)
-
-* Quer denunciar anonimamente
-* Medo de represália
-
-Juliana (25 anos)
-
-* Baixa confiança no sistema
-* Medo de não ser levada a sério
-
-Roberto (40 anos)
-
-* Pouco tempo disponível
-* Medo de exposição
-
----
-
-## 🔹 Perfil 3: Servidores públicos
-
-Fernanda (35 anos)
-
-* Muitos chamados
-* Medo de perder prazos
-
-Marcos (45 anos)
-
-* Precisa de controle
-* Medo de má gestão
-
-Luana (28 anos)
-
-* Precisa de dados corretos
-* Medo de resolver errado
+* Baixo acoplamento
+* Código organizado em camadas
 
 ---
 
@@ -121,68 +108,6 @@ Luana (28 anos)
 
 ---
 
-# 💻 Exemplo de Uso
-
-===== SISTEMA DE SOLICITAÇÕES =====
-1 - Criar solicitação
-2 - Listar solicitações
-3 - Buscar por protocolo
-4 - Atualizar status
-0 - Sair
-
----
-
-Descrição: Buraco na rua
-Categoria: Infraestrutura
-
-Criado com protocolo: 1
-
----
-
-# 🔄 Fluxo do Sistema
-
-1. Usuário cria uma solicitação
-2. Sistema gera protocolo automaticamente
-3. Status inicial: ABERTA
-4. Pode ser atualizada ao longo do tempo
-
----
-
-# 🧹 Clean Code (Relatório)
-
-Função: criarSolicitacao()
-
-* Nome claro e descritivo
-* Facilita entendimento
-
-Função: buscarPorProtocolo()
-
-* Responsabilidade única
-* Permite reutilização
-
-Função: atualizarStatus()
-
-* Baixo acoplamento
-* Mantém histórico separado
-
----
-
-# 🚀 Melhorias Futuras
-
-* Interface gráfica (JavaFX)
-* API REST (Spring Boot)
-* Banco de dados
-* Sistema de login
-* Prioridade de solicitações
-
----
-
 # 👨‍💻 Autor
 
 Leonardo Gomes Ferreira
-
----
-
-# 📄 Licença
-
-Projeto acadêmico para fins educacionais.
