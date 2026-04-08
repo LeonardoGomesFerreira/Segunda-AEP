@@ -1,7 +1,7 @@
-package Services;
+package Central;
 
-import Models.Solicitacao;
-import Models.Categoria;
+import Dominio.Solicitacao;
+import Dominio.Categoria;
 
 import java.util.ArrayList;
 import java.util.List;

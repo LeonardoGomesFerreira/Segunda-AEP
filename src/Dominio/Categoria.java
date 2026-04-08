@@ -1,4 +1,4 @@
-package Models;
+package Dominio;
 
 public class Categoria {
     private String nome;

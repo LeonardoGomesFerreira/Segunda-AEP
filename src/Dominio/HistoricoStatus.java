@@ -1,4 +1,4 @@
-package Models;
+package Dominio;
 
 import java.time.LocalDateTime;
 

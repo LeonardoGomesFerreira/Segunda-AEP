@@ -1,5 +1,5 @@
-import Services.ServicoSolicitacao;
-import Models.Solicitacao;
+import Central.ServicoSolicitacao;
+import Dominio.Solicitacao;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Models;
+package Dominio;
 
 import java.util.ArrayList;
 import java.util.List;
