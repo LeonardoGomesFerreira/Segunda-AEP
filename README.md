@@ -19,13 +19,13 @@ Este projeto é um sistema simples em Java desenvolvido com foco em Programaçã
 O projeto está organizado em camadas:
 
 src/
-├── model/ → classes de domínio
+├── dominio/ → classes de domínio
 │    ├── Usuario.java
 │    ├── Categoria.java
 │    ├── HistoricoStatus.java
 │    └── Solicitacao.java
 │
-├── service/ → regras de negócio
+├── central/ → regras de negócio
 │    └── ServicoSolicitacao.java
 │
 └── Main.java → execução do sistema
@@ -34,7 +34,7 @@ src/
 
 # 🧠 Organização das Classes
 
-## 📁 model
+## 📁 dominio
 
 * **Usuario** → representa o usuário do sistema
 * **Categoria** → tipo da solicitação
@@ -43,7 +43,7 @@ src/
 
 ---
 
-## ⚙️ service
+## ⚙️ central
 
 * **ServicoSolicitacao**
 
