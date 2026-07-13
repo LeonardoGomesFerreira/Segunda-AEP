@@ -16,19 +16,19 @@ Este projeto é um sistema simples em Java desenvolvido com foco em Programaçã
 
 # 🏗️ Estrutura do Código
 
-O projeto está organizado em camadas:
+O projeto está organizado em camadas para separar as entidades do domínio das regras de negócio e da execução da aplicação.
 
 src/
-├── dominio/ → classes de domínio
-│    ├── Usuario.java
-│    ├── Categoria.java
-│    ├── HistoricoStatus.java
-│    └── Solicitacao.java
+├── dominio/
+│   ├── Usuario.java
+│   ├── Categoria.java
+│   ├── HistoricoStatus.java
+│   └── Solicitacao.java
 │
-├── central/ → regras de negócio
-│    └── ServicoSolicitacao.java
+├── central/
+│   └── ServicoSolicitacao.java
 │
-└── Main.java → execução do sistema
+└── Main.java
 
 ---
 
